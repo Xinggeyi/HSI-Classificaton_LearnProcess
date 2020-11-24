@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 import os
 
 # 导入数据
-path = os.path.join("F:\deeplearning\hyperspectral_datasets")  # change this path for your dataset
-PaviaU = os.path.join(path,'F:\deeplearning\hyperspectral_datasets\Salinas_corrected.mat')
-PaviaU_gt = os.path.join(path,'F:\deeplearning\hyperspectral_datasets\Salinas_gt.mat')
+path = os.path.join("E:\Eric_HSI\hyperspectral_datasets")  # change this path for your dataset
+PaviaU = os.path.join(path,'Salinas_corrected.mat')
+PaviaU_gt = os.path.join(path,'Salinas_gt.mat')
 method_path = 'SVM'
 
 # 加载数据，返回值为一个字典内嵌ndarray的数据结构
@@ -70,8 +70,9 @@ for i in range(1,len(test_pos)+1):
         row,col = test_pos[i][j]
         test.append(im[row,col])
         test_label.append(i)
-if not os.path.exists(os.path.join(method_path,'result')):
-    os.makedirs(os.path.join(method_path,'result'))
+
+if not os.path.exists(os.path.join('result')):
+    os.makedirs(os.path.join('result'))
 
 clf = KNeighborsClassifier(n_neighbors=neighuour_num)
 train = np.asarray(train)
@@ -106,6 +107,7 @@ ac_list = np.asarray(ac_list)
 aa = np.mean(ac_list)
 print('Average accuracy:',aa)
 print('Kappa:', kappa)
+
 sio.savemat(os.path.join('result', 'result.mat'), {'oa': accuracy,'aa':aa,'kappa':kappa,'ac_list':ac_list,'matrix':matrix})
 iG = np.zeros((imGIS.shape[0],imGIS.shape[1]))
 
@@ -120,8 +122,8 @@ for i in range(imGIS.shape[0]):
                 iG[i,j]=0
         else:
             iG[i,j] = (clf.predict(im[i,j].reshape(-1,len(im[i,j]))))
-if test_bg:
-    iG[0,0] = 0
+# if test_bg:
+#     iG[0,0] = 0
 
 de_map = iG[::-1]
 fig, _ = plt.subplots()
