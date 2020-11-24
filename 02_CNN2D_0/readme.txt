@@ -1,1 +1,1 @@
-25个像素变为一个
+25 pixels to make one pixel.
