@@ -1,6 +1,12 @@
 /hyperspectral_datasets
+/hyper_data_preprocess
+
+
 /__pycache__
 /.ipynb_checkpoints
+
+/01_CNN1D_0/model
+
 
 /02_CNN2D_1/model
 /02_CNN2D_1/predata

@@ -1,0 +1,78 @@
+1 class: matrix[1, 1] / sum(matrix[:, 1] 1.0
+2 class: matrix[2, 2] / sum(matrix[:, 2] 0.9963245688436528
+3 class: matrix[3, 3] / sum(matrix[:, 3] 0.9749163879598662
+4 class: matrix[4, 4] / sum(matrix[:, 4] 0.9363707776904949
+5 class: matrix[5, 5] / sum(matrix[:, 5] 0.9850560398505604
+6 class: matrix[6, 6] / sum(matrix[:, 6] 1.0
+7 class: matrix[7, 7] / sum(matrix[:, 7] 0.9952690715552928
+8 class: matrix[8, 8] / sum(matrix[:, 8] 0.8131993605846084
+9 class: matrix[9, 9] / sum(matrix[:, 9] 0.9945813668938996
+10 class: matrix[10, 10] / sum(matrix[:, 10] 0.8306731436502429
+11 class: matrix[11, 11] / sum(matrix[:, 11] 0.8157560355781448
+12 class: matrix[12, 12] / sum(matrix[:, 12] 0.9401197604790419
+13 class: matrix[13, 13] / sum(matrix[:, 13] 0.9320261437908497
+14 class: matrix[14, 14] / sum(matrix[:, 14] 0.9791154791154791
+15 class: matrix[15, 15] / sum(matrix[:, 15] 0.5598774885145482
+16 class: matrix[16, 16] / sum(matrix[:, 16] 0.9731379731379731
+
+ classification result: 
+                              precision    recall  f1-score   support
+
+                     Alfalfa       1.00      1.00      1.00      1809
+                 Corn-notill       1.00      1.00      1.00      3526
+                Corn-mintill       0.97      0.98      0.98      1776
+                        Corn       0.94      1.00      0.97      1194
+               Grass-pasture       0.99      0.96      0.97      2478
+                 Grass-trees       1.00      0.99      1.00      3759
+         Grass-pasture-mowed       1.00      1.00      1.00      3379
+               Hay-windrowed       0.81      0.64      0.72     11071
+                        Oats       0.99      0.95      0.97      6003
+              Soybean-notill       0.83      0.78      0.80      3078
+             Soybean-mintill       0.82      0.74      0.78       868
+               Soybean-clean       0.94      1.00      0.97      1727
+                       Wheat       0.93      1.00      0.96       716
+                       Woods       0.98      0.92      0.95       870
+Buildings-Grass-Trees-Drives       0.56      0.78      0.65      7068
+          Stone-Steel-Towers       0.97      0.99      0.98      1607
+
+                    accuracy                           0.86     50929
+                   macro avg       0.92      0.92      0.92     50929
+                weighted avg       0.88      0.86      0.86     50929
+
+ confusion matrix: 
+[[1803    0    0    0    0    0    6    0    0    0    0    0    0    0
+     0    0]
+ [   0 3524    0    0    0    0    2    0    0    0    0    0    0    0
+     0    0]
+ [   0    0 1749    0   12    0    0    0    0   13    2    0    0    0
+     0    0]
+ [   0    0    0 1192    2    0    0    0    0    0    0    0    0    0
+     0    0]
+ [   0    0   19   79 2373    0    0    0    4    2    0    0    0    0
+     1    0]
+ [   0    6    0    0   12 3734    0    0    0    0    0    0    0    7
+     0    0]
+ [   0    6    0    0    1    0 3366    1    0    0    0    0    0    4
+     0    1]
+ [   0    0    0    0    0    0    8 7122    6  156    0    2    0    0
+  3775    2]
+ [   0    0    0    0    0    0    0    9 5690   96  126   78    3    1
+     0    0]
+ [   0    0   22    2    3    0    0   57   18 2394   17   20    0    2
+   522   21]
+ [   0    0    0    0    3    0    0    0    0  210  642    4    0    0
+     1    8]
+ [   0    0    0    0    0    0    0    0    0    0    0 1727    0    0
+     0    0]
+ [   0    0    0    0    0    0    0    0    0    0    0    0  713    3
+     0    0]
+ [   0    0    0    0    0    0    0   11    0    3    0    2   49  797
+     3    5]
+ [   0    0    4    0    1    0    0 1558    3    7    0    4    0    0
+  5484    7]
+ [   0    1    0    0    2    0    0    0    0    1    0    0    0    0
+     9 1594]]
+oa 0.8620628718411907
+aa 0.920401474852791
+kappa 0.8461006630438638
+Test loss 38.11170756816864 (%)
