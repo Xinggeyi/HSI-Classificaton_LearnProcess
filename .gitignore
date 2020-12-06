@@ -11,6 +11,10 @@
 /02_CNN2D_1/model
 /02_CNN2D_1/predata
 /02_CNN2D_1/result
+02_CNN2D_2VGG/save_weights/myVGG.h5
+02_CNN2D_2VGG/save_weights_lowAPI/checkpoint
+02_CNN2D_2VGG/save_weights_lowAPI/myVGG.ckpt.data-00000-of-00001
+02_CNN2D_2VGG/save_weights_lowAPI/myVGG.ckpt.index
 
 
 /03_CNN3D_0/__pycache__
@@ -86,3 +90,4 @@ hyper_data_preprocess/Salinas_w_size_9_num_200_for_2D/test_label.npy
 hyper_data_preprocess/Salinas_w_size_9_num_200_for_2D/test.npy
 hyper_data_preprocess/Salinas_w_size_9_num_200_for_2D/train_label.npy
 hyper_data_preprocess/Salinas_w_size_9_num_200_for_2D/train.npy
+
